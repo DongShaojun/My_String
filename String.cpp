@@ -89,6 +89,7 @@ std::istream & operator >> (std::istream & is, String & s)
 		s = temp;
 	while (is&&is.get() != '\n')
 		continue;
+	return is;
 }
 
 bool operator<(const String & str1, const String & str2)
